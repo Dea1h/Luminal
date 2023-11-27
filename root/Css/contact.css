@@ -1,0 +1,53 @@
+:root{
+	--background-color: rgb(238,206,245);
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0px;
+	overflow: hidden;
+}
+nav{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	background-color: var(--background-color);
+}
+nav > .nav-section{
+	padding: 1.2rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+#nav-logo-section{
+	flex-basis: calc(100% / 3);
+}
+#nav-link-section{
+	flex-basis: calc(100% / 3);
+	gap: 4rem;
+}
+#nav-business-section{
+	flex-grow: 1;
+	font-size: 1.3rem;
+}
+#nav-social-section{
+	flex-grow: 1;
+	gap: 5rem;
+	font-size: 1.5rem;
+}
+#nav-logo-section{
+	justify-content: flex-start;
+}
